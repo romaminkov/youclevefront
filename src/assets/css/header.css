@@ -1,0 +1,195 @@
+/*HEADER START*/
+.header{
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.header-nav{
+    padding-right: 90px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.header-logo{
+    line-height: 0.8;
+    font-size: 48px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+}
+.search{
+    height: 30px;
+    width: 30px;
+    margin-right: 24px; 
+}
+.search-btn{
+    color: #1D1C44;
+}
+
+.log-in-btn{
+    width: 90px;
+    height: 30px;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    color: #979797;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+
+.log-in-btn:hover, 
+.all-courses a:hover,
+.present-btn:hover,
+.search-icon:hover,
+.slider-btn-a:hover{
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+    filter: brightness(10);
+    transition: 0.3s;
+}
+.all-courses{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #1D1C44;
+}
+.all-courses ul{
+    margin: 0;
+    display: flex;
+    
+    padding-right: 90px;
+    padding-left: 240px;
+    list-style: none;
+}
+
+.all-courses a{
+    
+    width: 140px;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+    color: #979797;
+    text-decoration: none;
+    
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+}
+/*HEADER END*/
+
+
+
+@media (min-width: 320px){
+    .header-logo{
+        font-size: 28px;
+    }
+    
+    .header-nav{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .all-courses ul{
+        padding: 0;
+        margin-left: 15%;
+    }
+    .search{
+        height: 30px;
+        width: 30px;
+        margin-right: 8px; 
+    }
+    .log-in-btn{
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+    .all-courses ul{
+        padding: 0;
+        margin-left: 10%;
+        font-size: 12px;
+    }
+}
+@media (min-width: 425px){
+    .header-logo{
+        font-size: 36px;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: auto;
+    }
+    
+    .header-nav{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .all-courses ul{
+        padding: 0;
+        margin-left: 15%;
+    }
+    .search{
+        height: 30px;
+        width: 30px;
+        margin-right: 12px; 
+    }
+}
+@media (min-width: 768px){
+    .header-logo{
+        font-size: 48px;
+    }
+    .header{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header-nav{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .all-courses ul{
+        margin: 0;
+        padding-left: 100px;
+        font-size: 16px;
+    }
+    .log-in-btn{
+        width: 90px;
+        font-size: 16px;
+        height: 30px;
+        padding: 8px 20px;
+        
+    }
+    .search{
+        margin-right: 24px; 
+    }
+}
+
+@media (min-width: 960px){
+    .header-logo{
+        font-size: 48px;
+    }
+    .header{
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+    .header-nav{
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+    .all-courses ul{
+        margin: 0;
+        padding-left: 240px;
+        font-size: 16px;
+    }
+    .log-in-btn{
+        font-size: 16px;
+        width: 90px;
+        height: 30px;
+        padding: 8px 20px;
+    }
+    .search{
+        margin-right: 24px; 
+    }
+}
+

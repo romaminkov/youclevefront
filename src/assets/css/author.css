@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+    
+body{    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #0f1435 !important;
+    padding: 0;
+    margin: 0;    
+}
+.author-wrapper{
+    background: #f4f4f4;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.about-or-courses{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #979797;
+}
+.about-btn{
+    margin-right: 30px;
+}
+.about-btn button,
+.courses-btn button{
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 2px solid #0f1435;
+    color: #0f1435;
+    border-radius: 10px;
+}
+.about-btn button:hover,
+.courses-btn button:hover,
+.about-btn button:focus,
+.courses-btn button:focus{
+    background: #0f1435;
+    color: #f4f4f4;
+    transition: .5s;
+}
+.about-author-wrapper{
+    display: flex;
+    padding-top: 30px;
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.author-page{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #979797;
+}
+.about-text-wrapper{
+    width: 70%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar{
+    background: #979797;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.author-info{
+    color: #0f1435;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.author-name{
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #0f1435;
+}
+.geoposition{
+    margin-top: 15px;
+    font-size: 22px;
+    color: #979797;
+}
+.counter-wrapper{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.fol-count{
+    color: #0f1435;
+    font-size: 28px;
+    margin-right: 30px;
+}
+.courses-count{
+    color: #0f1435;
+    font-size: 28px;
+}
+.follow-btn{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.follow-btn button{
+    background: #f4f4f4;
+    outline: none;
+    color: #1D1C44;
+    padding: 8px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #1D1C44;
+    border-radius: 10px;
+}
+.follow-btn button:hover{
+    background: #0f1435;
+    color: #f4f4f4;
+    transition: .5s;
+}
+.site{
+    font-size: 14px;
+    color: #979797;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.site:hover{
+    color: #0f1435;
+    text-decoration: underline;
+}
+h1{
+    color: #0f1435;
+    font-size: 22px;
+}
+.text{
+    color: #0f1435;
+    padding-bottom: 30px;
+}
+
+
+.course-img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.course-info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #979797;
+    font-size: 12px;
+}
+
+.col-time{
+    display: flex;
+    flex-direction: column;
+}
+.star{
+    color: yellow;
+}
+.raiting{
+    font-size: 16px;
+}
+.course-title{
+    color: white;
+}
+.item-author-name{
+    color: #979797;
+    background: #0f1435;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.item-recomended{
+    margin: 0;
+    font-size: 16px;
+}
+.video-item{
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 220px;
+    max-height: 280px;
+    background: #0f1435;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.video-item:hover{
+    color: #0f1435;
+    transform: translateY(-5px);
+    transition: .5s;
+}
+.video-item:hover .item-author-name:hover{
+    color: #ffffff;
+}
+.courses-wrapper{
+    display: flex;
+    padding-top: 30px;
+    background: #f4f4f4;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.courses{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.social a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #0f1435;
+    margin-left: 10px;
+}
+.social a:hover {
+    color: #1D1C44;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.social a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.social li a::before,
+.social li a::after {
+    content: '';
+    position: absolute;
+    background: #1D1C44;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    transition: transform .5s; 
+    transform: scaleY(0);
+}
+.social li a div::before,
+.social li a div::after {
+    content: '';
+    position: absolute;
+    background: #1D1C44;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    transition: transform .5s;
+    transform: scaleY(0);
+}
+.social li a::before {
+    transform-origin: right;
+}
+.social li a:hover::before {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.social li a:hover::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.social li a::after {
+    transform-origin: left;
+}
+.social li a:hover div::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.social li a:hover div::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.social li a div::before {
+    left: 0; 
+    transform-origin : bottom;
+}
+.social li a div::after {
+    right: 0;
+    transform-origin: top; 
+}
+
+.social + a {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (min-width: 320px){
+.author-wrapper{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+}
+.author-name{
+    font-size: 16px;
+}
+.geoposition{
+    margin-top: 8px;
+    font-size: 16px;
+}
+.fol-count{
+    font-size: 20px;
+}
+.courses-count{
+    font-size: 20px;
+}
+.counter-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.courses-wrapper{
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.video-item{
+    margin-left: 5px;
+}
+.author-page{
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #979797;
+}
+.about-text-wrapper{
+    width: 100%;
+}
+.courses{
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.social {
+    flex-wrap: wrap;
+}
+.follow-btn button{
+    padding: 4px 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-author-wrapper{
+    flex-direction: column;
+}
+}
+@media (min-width: 768px){
+.author-wrapper{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+}
+.author-name{
+    font-size: 16px;
+}
+.geoposition{
+    margin-top: 8px;
+    font-size: 16px;
+}
+.fol-count{
+    font-size: 20px;
+}
+.courses-count{
+    font-size: 20px;
+}
+.counter-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.courses-wrapper{
+    flex-direction: row;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.video-item{
+    margin-left: 5px;
+}
+.author-page{
+    width: 25%;
+    border-bottom: none;
+    border-right: 2px solid #979797;
+}
+.about-text-wrapper{
+    width: 75%;
+}
+.courses{
+    width: 75%;
+    justify-content: space-around;
+}
+.social {
+    flex-wrap: wrap;
+}
+.follow-btn button{
+    padding: 4px 10px;
+    font-size: 18px;
+}
+.about-author-wrapper{
+    flex-direction: row;
+}
+}
+@media (min-width: 960px){
+.author-wrapper{
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+.author-name{
+    font-size: 22px;
+}
+.geoposition{
+    margin-top: 15px;
+    font-size: 22px;
+}
+.fol-count{
+    font-size: 28px;
+}
+.courses-count{
+    font-size: 28px;
+}
+.counter-wrapper{
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+.courses-wrapper{
+    flex-direction: row;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.video-item{
+    margin-left: 10px;
+}
+.author-page{
+    width: 30%;
+    border-bottom: none;
+    border-right: 2px solid #979797;
+}
+.about-text-wrapper{
+    width: 70%;
+}
+.courses{
+    width: 70%;
+    justify-content:left;
+}
+.social {
+    flex-wrap: wrap;
+}
+.follow-btn button{
+    padding: 8px 20px;
+    font-size: 24px;
+}
+.about-author-wrapper{
+    flex-direction: row;
+}
+}
